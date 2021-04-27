@@ -9,27 +9,28 @@
 <body>
     <main>
         <h1 id="title">
-            Survey Form
+            Microverse Application Survey
         </h1>
         <p id="description">Survey Form Built by Peter and Leornado</p>
         <form id="survey-form">
-            <label id="name-label">Name Label</label>
+            <label id="name-label">Enter your name:</label>
             <input required placeholder="name" id="name" type="text" >
-            <label id="email-label">Email Label</label>
+            <label id="email-label">Enter your email:</label>
             <input placeholder="email" id="email" type="email" required>
-            <label id="number-label">Number Label</label>
-            <input placeholder="number" type="number" name="" id="number" min="1" max="10" required >
-           <select name="" id="droppdown">
-               <option value="one"></option>
-               <option value="two"></option>
-               <option value="three"></option>
-           </select>
-           <input type="radio" name="">
-           <input type="radio" name="">
-           <input type="checkbox" value="">
-           <input type="checkbox" value="">
-           <textarea></textarea>
-           <button id="submit">Submit</button>
+            <label id="number-label">Enter your age:</label>
+            <input placeholder="age" type="number" name="" id="number" min="18" max="100" required >
+            <label id="timezone-label">Select your time zone:</label>
+            <select name="test" id="dropdown">
+               <option value="one">European Time Zone (UTC+1)</option>
+               <option value="two">American Time Zone (UTC-6)</option>
+            </select>
+            <input type="radio" value="1" name="test">
+            <input type="radio" value="2" name="test">
+            <input type="checkbox" value="1">
+            <input type="checkbox" value="2">
+            <label id="suggestion-zone">Leave a suggestion for us:</label>
+            <textarea></textarea>
+            <button id="submit">Submit</button>
         </form>
     </main>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
